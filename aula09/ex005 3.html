@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(16, 195, 198); /*cor de fundo*/
+            color: white; /*cor da letra*/
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1> <!--titulo-->
+    <p>Aqui vai o resultado</p> <!--paragrafo-->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div>  
+    <script> 
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1] //selecionei o primeiro paragrafo com esse 'p' e 0
+        var d = document.querySelector('div#msg')
+        d.style.background = 'red'
+    </script>    
+</body>
+</html> 

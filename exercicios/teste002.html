@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste002</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 300px; /*tamanho da barra verde para os lados*/
+            height: 200px; /*tamanho da barra verde pra baixo*/
+            line-height: 200px; /*lugar que vai ficar o div*/
+            text-align: center; /*centralizou div*/
+        }        
+    </style>
+</head>
+<body>
+    <h1><strong>INTERAJINDO COM JS</strong></h1>
+    <div id = area>
+        Clique para começar!
+    </div>
+    <p>Aqui vai aparecer o resultado!</p>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        function clicar (){
+            var nome = prompt('Qual seu nome?')
+            var p = document.getElementsByTagName('p')[0]
+            p.innerText = `Olá ${nome}, é um prazer!`
+        }
+    </script>
+</body>
+</html>

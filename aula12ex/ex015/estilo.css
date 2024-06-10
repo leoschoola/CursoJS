@@ -1,0 +1,24 @@
+body {
+    background: rgb(29, 201, 98);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white; /*cor do titulo*/
+    text-align: center; /*para centralizar o titulo*/
+}
+
+section {
+    background: white;
+    border-radius: 10px; /* para fazer a borda redonda */
+    padding: 15px; /*para dar espaço dentro do border*/
+    width: 500px; /*para por largura*/
+    margin: auto; /*para centralizar */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318); /*para por sombra */
+}
+
+footer {
+    color: white; /*cor do cursoemvideo*/
+    text-align: center; /*centralizar o texto*/
+    font-style: italic; /*para ficar em italico*/
+}
